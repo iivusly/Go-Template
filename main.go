@@ -25,7 +25,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to create new schema, error: %v", err)
 	}
-	Serve(&schema, getenv("PORT", "3000"))
+	Serve(&schema, util.GetEnv("PORT", "3000"))
 }
 
 /*
