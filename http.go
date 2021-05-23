@@ -20,5 +20,5 @@ func Serve(Schema *graphql.Schema, port string) {
 
 	fmt.Println("Serving on port ", port)
 
-	http.ListenAndServe(port, nil)
+	http.ListenAndServe(":"+port, nil)
 }
