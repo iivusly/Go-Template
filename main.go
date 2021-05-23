@@ -6,7 +6,7 @@ import (
 	// GraphQL
 	"github.com/graphql-go/graphql"
 
-	"./test"
+	"github.com/Calpico-Drink/Go-Template/util"
 )
 
 func main() {
@@ -25,7 +25,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to create new schema, error: %v", err)
 	}
-	log.Fatalf(a)
 	Serve(&schema, getenv("PORT", "3000"))
 }
 
