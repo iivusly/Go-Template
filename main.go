@@ -11,7 +11,7 @@ func main() {
 
 	schema := GraphQL.Init()
 
-	GraphQL.Serve(&schema, util.GetEnv("PORT", "3000"))
+	GraphQL.Serve(&schema, util.GetEnv("PORT", "3333"))
 }
 
 /*
